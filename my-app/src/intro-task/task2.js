@@ -1,32 +1,36 @@
 import './task.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ArrowR from '../components/ArrowR';
+import ArrowL from '../components/ArrowL';
+import MeshgradRed from '../components/Meshgrad-red.js';
 
-const MyComponent = () => {
-  const rt = "Rouwtaak"
+const Task = () => {
+  const rt = "Rouwtaak 2"
   const sub = "De pijn doorvoelen";
   const d = "Sta jezelf toe om de pijn te voelen en leer om deze op jouw manier te verwerken.";
 
   // Inner component
   const Task2 = () => {
     return (
-      <div>
+      <article>
         <h2>{rt}</h2>
         <h3>{sub}</h3>
         <p>{d}</p>
-        <Link to="/task1">Go to Task 1</Link>
-        <Link to="/task3">Go to Task 3</Link>
-      </div>
+        <Link to="/task1"><ArrowL /></Link>
+        <Link to="/task3"><ArrowR /></Link>
+        <MeshgradRed />
+      </article>
     );
   };
 
   // Return outer component's structure, w. inner component
   return (
-    <header>
+    <section>
       <h1>Introductie rouwtaken</h1>
       <Task2 /> {/* Rendering inner component */}
-    </header>
+    </section>
   );
 };
 
-export default MyComponent;
+export default Task;
