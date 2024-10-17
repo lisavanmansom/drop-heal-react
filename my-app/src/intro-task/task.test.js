@@ -5,25 +5,12 @@ import Task3 from './task3';
 import Task4 from './task4';
 
 test('renders learn react link', () => {
-  render(<Task1 />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test('renders learn react link', () => {
-  render(<Task2 />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test('renders learn react link', () => {
-  render(<Task3 />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test('renders learn react link', () => {
-  render(<Task4 />);
+  render(<>
+          <Task1/>
+          <Task2/>
+          <Task3/>
+          <Task4/>
+        </>);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
