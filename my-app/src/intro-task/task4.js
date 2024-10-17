@@ -2,14 +2,31 @@ import './task.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Task4() {
-  return (
-    <div>
-      <h1>Task 4 Page</h1>
-      <Link to="/task3">Go to Task 3</Link>
-      <Link to="/task3">Go to Task 3</Link>
-    </div>
-  );
-}
+const MyComponent = () => {
+  const rt = "Rouwtaak"
+  const sub = "Emotioneel verder gaan";
+  const d = "Ontdek hoe je een nieuw pad kunt inslaan terwijl je het verlies een betekenisvolle plek geeft in je leven.";
 
-export default Task4;
+  // Inner component
+  const Task4 = () => {
+    return (
+      <div>
+        <h2>{rt}</h2>
+        <h3>{sub}</h3>
+        <p>{d}</p>
+        <Link to="/task3">Go to Task 3</Link>
+        <Link to="/task3">Go to Task 4</Link>
+      </div>
+    );
+  };
+
+  // Return outer component's structure, w. inner component
+  return (
+    <header>
+      <h1>Introductie rouwtaken</h1>
+      <Task4 /> {/* Rendering inner component */}
+    </header>
+  );
+};
+
+export default MyComponent;
