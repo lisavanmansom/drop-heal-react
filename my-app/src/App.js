@@ -1,29 +1,17 @@
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
-import Task1 from './intro-task/task1';
-import Task2 from './intro-task/task2';
-import Task3 from './intro-task/task3';
-import Task4 from './intro-task/task4';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import TaskDetail from './intro-task/taskDetail';
 
 function App() {
   return (
       <div className="App">
-        <h1>test</h1>
-
-        <nav>
-          <ul>
-            <li><Link to="/task1">1</Link></li>
-            <li><Link to="/task2">2</Link></li>
-            <li><Link to="/task3">3</Link></li>
-            <li><Link to="/task4">4</Link></li>
-          </ul>
-        </nav>
-        
+        <h1>Drop & Heal</h1>
+        <Link to="/task/1">Introductie Rouwtaken</Link>
+  
         <Routes>
-          <Route path="/task1" element={<Task1 />} />
-          <Route path="/task2" element={<Task2 />} />
-          <Route path="/task3" element={<Task3 />} />
-          <Route path="/task4" element={<Task4 />} />
+          <Route path="/task/:id" element={<TaskDetail />} /> 
         </Routes>
     </div>
   );
