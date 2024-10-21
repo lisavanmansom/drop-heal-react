@@ -1,9 +1,9 @@
 import './task.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ArrowR from '../components/ArrowR';
-import ArrowL from '../components/ArrowL';
-import MeshgradGreen from '../components/Meshgrad-green.js';
+import ArrowR from '../components/ArrowR.jsx';
+import ArrowL from '../components/ArrowL.jsx';
+import MeshgradGreen from '../components/Meshgrad-green.jsx';
 
 const Task = () => {
   const rt = "Rouwtaak 3"
