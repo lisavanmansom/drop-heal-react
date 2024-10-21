@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Task1 from './intro-task/task1';
 import Task2 from './intro-task/task2';
 import Task3 from './intro-task/task3';
@@ -9,6 +9,15 @@ function App() {
   return (
       <div className="App">
         <h1>test</h1>
+
+        <nav>
+          <ul>
+            <li><Link to="/task1">1</Link></li>
+            <li><Link to="/task2">2</Link></li>
+            <li><Link to="/task3">3</Link></li>
+            <li><Link to="/task4">4</Link></li>
+          </ul>
+        </nav>
         
         <Routes>
           <Route path="/task1" element={<Task1 />} />
