@@ -1,7 +1,8 @@
-import MeshgradBlue from '../components/Meshgrad-blue.jsx';
-import MeshgradRed from '../components/Meshgrad-red.jsx';
-import MeshgradGreen from '../components/Meshgrad-green.jsx';
-import MeshgradPink from '../components/Meshgrad-pink';
+import MeshgradBlue from '../components/Meshgrad-blue.jsx'
+import MeshgradRed from '../components/Meshgrad-red.jsx'
+import MeshgradGreen from '../components/Meshgrad-green.jsx'
+import MeshgradPink from '../components/Meshgrad-pink.jsx'
+
 import ArrowR from '../components/ArrowR.jsx';
 import ArrowL from '../components/ArrowL.jsx';
 

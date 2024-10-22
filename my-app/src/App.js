@@ -6,14 +6,14 @@ import TaskDetail from './intro-task/taskDetail';
 
 function App() {
   return (
-      <div className="App">
-        <h1>Drop & Heal</h1>
-        <Link to="/task/1">Introductie Rouwtaken</Link>
+      <main>
+        <h1 className="header">Drop & Heal</h1>
+        <Link to="/task/1" className="header">Introductie Rouwtaken</Link>
   
         <Routes>
           <Route path="/task/:id" element={<TaskDetail />} /> 
         </Routes>
-    </div>
+    </main>
   );
 }
 
