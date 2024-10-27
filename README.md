@@ -22,4 +22,4 @@ Voor deze page is er gebruik gemaakt van het framework React en wordt de data op
 * Run de command npm start;
 * Klik op de localhost link en begin met coden.
 
-Om deze pagina [livelink](https://drop-and-heal-react.vercel.app) te bekijken kan je klikken op de livelink in de About sectie van deze repository.
+Om deze pagina [livelink](https://dropandheal-react.vercel.app) te bekijken kan je klikken op de livelink in de About sectie van deze repository.
